@@ -1,0 +1,47 @@
+
+En Tailwind CSS, rounded-xl est une classe utilitaire qui s'applique pour donner des coins arrondis (ou un border-radius) aux éléments HTML. Voici les détails :
+
+Que fait rounded-xl ?
+La classe rounded-xl applique un border-radius spécifique à l'élément auquel elle est assignée. La valeur exacte de border-radius dépend de la configuration de Tailwind, mais par défaut :
+
+rounded-xl correspond à un border-radius de 12px.
+Comparaison avec d'autres classes de coins arrondis
+Voici quelques classes utilitaires similaires avec leurs valeurs par défaut dans Tailwind CSS :
+
+Classe	        Border-radius
+rounded-none	    0px
+rounded-sm	        2px
+rounded	            4px
+rounded-md	        6px
+rounded-lg	        8px
+rounded-xl	        12px
+rounded-2xl	        16px
+rounded-3xl	        24px
+rounded-full	    9999px (cercle)
+
+
+## les point d'arret
+Il existe cinq points d'arrêt par défaut, inspirés des résolutions d'appareils courantes :
+
+Préfixe de point d'arrêt	    Largeur minimale	            CSS
+sm	                                640px	            @media (min-width: 640px) { ... }
+md	                                768px	            @media (min-width: 768px) { ... }
+lg	                                1024px	            @media (min-width: 1024px) { ... }
+xl	                                1280px	            @media (min-width: 1280px) { ... }
+2xl	                                1536px	            @media (min-width: 1536px) { ... }
+
+
+## les poids de police
+Comparaison avec d'autres classes de poids de police
+Tailwind CSS fournit plusieurs classes pour contrôler le poids des polices. Voici les principales et leurs valeurs CSS correspondantes :
+
+Classe	Valeur de font-weight	Description
+font-thin	100	Très fine
+font-extralight	200	Ultra légère
+font-light	300	Légère
+font-normal	400	Standard (régulière)
+font-medium	500	Moyennement épaisse
+font-semibold	600	Semi-gras
+font-bold	700	Gras
+font-extrabold	800	Très gras
+font-black	900	Ultra-gras

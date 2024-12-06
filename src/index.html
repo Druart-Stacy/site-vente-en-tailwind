@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="/src/output.css"> -->
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+  <div class="chat-notification">
+    <div class="chat-notification-logo-wrapper">
+      <img class="chat-notification-logo" src="/img/logo.svg" alt="ChitChat Logo">
+    </div>
+    <div class="chat-notification-content">
+      <h4 class="chat-notification-title">ChitChat</h4>
+      <p class="chat-notification-message">You have a new message!</p>
+    </div>
+  </div>
+  
+  <style>
+    .chat-notification {
+      display: flex;
+      align-items: center;
+      max-width: 24rem;
+      margin: 0 auto;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      background-color: #fff;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    .chat-notification-logo-wrapper {
+      flex-shrink: 0;
+    }
+    .chat-notification-logo {
+      height: 3rem;
+      width: 3rem;
+    }
+    .chat-notification-content {
+      margin-left: 1.5rem;
+    }
+    .chat-notification-title {
+      color: #1a202c;
+      font-size: 1.25rem;
+      line-height: 1.25;
+    }
+    .chat-notification-message {
+      color: #718096;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  </style>
+
+  <h1 class="text-3xl font-bold underline"></h1>
+    <!-- text-3xl :classe Tailwind qui définit une taille de police spécifique. (très grande taille) (équivalent à font-size: 1.875rem ou 30px,selon la configuration par défaut).
+    font-bold : Rend le texte gras, équivalent à font-weight: 700 en CSS.
+    underline : Ajoute un soulignement, équivalent à text-decoration: underline en CSS,text-xl, text-black, font-medium est egale a la taille du text -->
+    <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center gap-x-4">
+      <!-- ,gap-x-4 pour gérer l'espacement entre le logo et le texte ,mx-auto permet de contrainde la largeur de la carte et de centraliser a l'horizondale,-->
+      <!-- shadow-lg est egale a l'ombre de la boite, rounded-xl est equivaut a border-radius 12px-->
+      <div class="shrink-0">
+        <!-- shrink permet de controler la disposition global sur la card ,-->
+        <!-- bg-white  defini la couleur de fond ,-->
+        <img class="size-12" src="/assets/img/JEMA GER 1446-05.jpg" alt="ChitChat Logo">
+        <!-- size-12 permettent de définir la largeur et la hauteur de l'image du logo -->
+      </div>
+      <div>
+        <div class="text-xl font-medium text-black">ChitChat</div>
+        <!-- text-xl=taille du texte ,font-medium=police d'ecriture a l' épaisseur ou poids moyenne ,text-black a la couleur -->
+        <p class="text-slate-500">You have a new message!</p>
+      </div>
+    </div>
+    <!-- erin Lindford -->
+    <div class="py-8 px-8 max-w-sm mx-auto space-y-2 bg-white rounded-xl shadow-lg sm:py-4 sm:space-y-0 sm:gap-x-6">
+      <!-- py-8=rembourrage en haut (padding-top) et en bas (padding-bottom).
+       px-8=rembourrage à gauche (padding-left) et à droite (padding-right).
+       max-w-sm= Définit une largeur maximale pour l'élément. sm=small
+       mx-auto=centrage de l'élément a l'horizondal grace a margin-x:auto ce qui permet d'aligner l'élément a son conteneur parent
+       space-y-2=ajout d 'un espace vertical de 8px entre chaque élément enfant 
+       bg-white=couleur d'arier plan
+       rounded-xl= arrondisement des bord dans ce cas si en12px
+       shadow-lg= application d'un ombrage large et doux a l'element pour donner un effet de profondeur
+       sm:py-4=Classe responsive (grâce au préfixe sm:) qui ajuste le padding-y (haut et bas) à 1rem (16px) pour les écrans de taille sm ou plus (≥640px par défaut).
+       sm:space-y-0= supprimer l'espace (space-y-0) entre les enfants pour les ecran sm ou plus
+       sm:gap-x-6= ajout d'espace horisontal de 24px entre les enfants pour les ecran sm ou plus
+       -->
+      <img class="block mx-auto h-24 rounded-full sm:m-0 sm:shrink-0" src="/assets/img/ball.jpg" alt="pokeball">
+      <div class="text-center space-y-2 sm:text-left">
+        <div class="space-y-0.5">
+        <p class="text-lg text-black font-semibold">
+          Erin Lindford
+        </p>
+        <p class="text-slate-500 font-medium">
+          Product Engineer
+        </p>
+      </div>
+      <button class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Message</button>
+    </div>
+  </div>
+  <!-- retrain entreprise -->
+  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+    <div class="md:flex">
+      <div class="md:shrink-0">
+        <img class="h-48 w-full object-cover md:h-full md:w-48" src="/assets/img/ball.jpg" alt="">
+      </div>
+      <div class="p-8">
+        <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">company retreats </div>
+          <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">incredible accommode</a>
+          <p class="mt-2 text-slate-500">Looking to take your team away on a retreat to enjoye aweson e fppd and take in some sunshine</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
